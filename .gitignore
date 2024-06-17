@@ -1,0 +1,7 @@
+venv/
+temp/
+logs/
+project/__pycache__
+project/data_processing/__pycache__
+
+
