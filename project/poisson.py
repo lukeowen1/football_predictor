@@ -1,4 +1,4 @@
-import data_collation
+import data_processing.data_collation
 
 def predict(home_team, away_team):
 

@@ -1,3 +1,9 @@
+"""
+The 'main' script that all other scripts run from. 
+This is designed to be ran from the terminal where the particular 
+data_processing script will be stated and pulled in.
+"""
+
 import argparse
 import importlib
 from setup import Setup

@@ -1,2 +1,37 @@
 data_collation: 
     csv_file_path: /Users/lwowen/Library/CloudStorage/OneDrive-Deloitte(O365D)/Documents/prem_league_data/*.csv
+
+data_cleaning: 
+    columns_to_keep: 
+        - HomeTeam
+        - AwayTeam
+        - FTHG # full time home goals
+        - FTAG # full time away goals
+        - FTR # full time result
+        - HS # home shots 
+        - AS # away shots 
+        - HST # home shots on target
+        - AST # away shots on target
+        - HF # home fouls 
+        - AF # away fouls 
+        - HC # home corners
+        - AC # away corners
+        - HY # home yellows
+        - AY # away yellows
+ 
+    excess_columns:
+        - Full time home goals
+        - Full time away goals 
+        - Full time result
+        - Home shots
+        - Away shots
+        - Home shots on target
+        - Away shots on target
+        - Home fouls
+        - Away fouls
+        - Home corners
+        - Away corners
+        - Home yellows
+        - Away yellows
+
+
