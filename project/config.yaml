@@ -3,7 +3,7 @@ data_collation:
 
 data_cleaning: 
     columns_to_keep: 
-        - HomeTeam
+        - HomeTeam 
         - AwayTeam
         - FTHG # full time home goals
         - FTAG # full time away goals

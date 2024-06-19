@@ -25,8 +25,6 @@ def main(Setup):
         df = pd.read_csv(file)
         df_football = df_football._append(df, ignore_index=True)
 
-    df_football.to_csv('df.csv')
-
     return(df_football)
 
     
