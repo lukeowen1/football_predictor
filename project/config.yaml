@@ -34,4 +34,17 @@ data_cleaning:
         - Home yellows
         - Away yellows
 
-
+    column_mappings: 
+        'FTHG': 'Full time home goals'
+        'FTAG': 'Full time away goals'
+        'FTR': 'Full time result'
+        'HS': 'Home shots'
+        'AS': 'Away shots'
+        'HST': 'Home shots on target'
+        'AST': 'Away shots on target'
+        'HF': 'Home fouls'
+        'AF': 'Away fouls'
+        'HC': 'Home corners'
+        'AC': 'Away corners'
+        'HY': 'Home yellows'
+        'AY': 'Away yellows'
