@@ -1,8 +1,7 @@
 """
 The 'main' script that all other scripts run from. 
-This is designed to be ran from the terminal where the particular 
-data_processing script will be stated and pulled in.
-"""
+This is designed to be ran from the terminal by inputting 'python3 main.py'
+""" 
 
 import argparse
 import importlib
