@@ -7,27 +7,17 @@ data_processing script will be stated and pulled in.
 import argparse
 import importlib
 from setup import Setup
+import data_processing.data_collation as script1
+import data_processing.data_cleaning as script2 
+import data_processing.poisson as script3 
+import data_processing.poisson_per_team as script4
 
-def run_script(script_name): 
+def main(Setup): 
+    script1.main(Setup)
+    script2.main(Setup)
+    script3.main(Setup)
+    script4.main(Setup)
 
-    try:
-         module = importlib.import_module(f"data_processing.{script_name}")
+if __name__ == "__main__":
+     main(Setup)
 
-         module.main(Setup)
-
-    except ImportError: 
-         print(
-              f'Error: Module "{script_name}" not found or Python package doesnt exist.'
-         )
-
-
-if __name__ == "__main__": 
-     
-     parser = argparse.ArgumentParser()
-     parser.add_argument("pipeline", nargs="*")
-     args = parser.parse_args()
-
-     for pipeline in args.pipeline: 
-          print(f"Starting {pipeline} pipeline")
-
-          run_script(pipeline)
